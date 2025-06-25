@@ -1,5 +1,8 @@
-## My Dots
+# Dots
 
 Yes gruvbox.
 
-SDDM by https://github.com/tbjers/gruvbox-sddm-theme
+
+### Links
+
+SDDM: https://github.com/tbjers/gruvbox-sddm-theme
