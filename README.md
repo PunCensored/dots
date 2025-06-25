@@ -5,4 +5,4 @@ Yes gruvbox.
 
 ### Links
 
-SDDM: https://github.com/tbjers/gruvbox-sddm-theme
+SDDM: https://github.com/he1senbrg/sddm-gruvbox
