@@ -1,0 +1,99 @@
+/* Colors */
+@define-color txt #d4be98;
+@define-color txt-dark #c7ab7a;
+@define-color green #a9b665;
+@define-color yellow #d8a657;
+@define-color red #ea6962;
+@define-color orange #e78a4e;
+@define-color bgdark #282725;
+@define-color bg #323130;
+@define-color bglight #3c3836; 
+@define-color statusline #46413e;
+@define-color bg_visual_green #424a3e;
+@define-color bg_visual_yellow #574833;
+
+
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: "iosevka nerd font";
+    font-weight: 900;
+    font-size: 14px;
+    padding: 0;
+}
+
+window#waybar {
+    background: @bglight;
+}
+
+tooltip {
+    background-color: #1d2021;
+    border: 2px solid #7c6f64;
+}
+
+#clock,
+#tray,
+#cpu,
+#memory,
+#network,
+#pulseaudio {
+    margin: 6px 6px 6px 0px;
+    padding: 2px 8px;
+}
+
+#workspaces {
+    background-color: @bglight;
+    margin: 6px 6px 6px 6px;
+}
+#window {
+    color: @txt;
+    margin: 6px 6px 6px 6px;
+}
+
+#workspaces button {
+    all: initial;
+    min-width: 0;
+    box-shadow: inset 0 -3px transparent;
+    padding: 2px 4px;
+    color: #c7ab7a;
+}
+
+#workspaces button.active {
+    color: @green; 
+    border-bottom: 2px solid @green;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+}
+
+#clock {
+    background-color: #3c3836;
+    color: #d4be98;
+}
+
+#tray {
+    color: #a9b665;
+    background-color: #46413e;
+    border: 2px solid #c7ab7a;
+}
+
+
+
+#cpu,
+#memory,
+#network,
+#pulseaudio {
+    background-color: @txt;
+    border: 2px solid @txt-dark;
+    color: @bgdark;
+}
+
+#cpu.critical,
+#memory.critical {
+    background-color: @txt;
+    border: 2px solid #c7ab7a;
+    color: #c14a4a;
+}
+
