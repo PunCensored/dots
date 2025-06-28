@@ -2,16 +2,11 @@
 
 Amount of gruvbox & material-gruvbox: **Yes**
 
-## Description
-- **OS**: Arch
-- **WM**: hyprland
-- **Term**: kitty
-- **Code**: nvim
-
 TODO: ‹Insert neofetch here›
 
 
 ## Gallery
+
 
 ## Links
 
