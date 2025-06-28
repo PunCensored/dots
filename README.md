@@ -2,11 +2,9 @@
 
 Amount of gruvbox & material-gruvbox: **Yes**
 
-TODO: ‹Insert neofetch here›
-
-
 ## Gallery
 ![desktop1](https://github.com/PunCensored/dots/blob/master/gallery/desktop1.png)
+
 
 ## Links
 
