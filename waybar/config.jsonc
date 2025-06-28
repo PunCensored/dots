@@ -36,7 +36,7 @@
        }
     },
     "hyprland/window": {
-	"format": " {class}",
+	"format": " {}",
 	"icon": true
     },
 
@@ -46,7 +46,7 @@
     },
 
     "clock": {
-        "format": "{:%I:%M %p - %a, %d %b %Y}",
+        "format": "{:%H:%M | %a, %d %b %Y}",
         "tooltip": false
     },
 
@@ -78,13 +78,14 @@
     "pulseaudio": {
         "scroll-step": 5,
         "max-volume": 150,
-        "format": "󰕾 / Vol {volume}%",
+        "format": "{icon} / Vol {volume}%",
         "nospacing": 1,
         "on-click": "pavucontrol",
         "tooltip": false,
 	"format-muted": "󰖁",
 	"format-icons": {
-            "default": ["󰕿", "󰖀", "󰕾"]
+            "default": ["󰕿", "󰖀", "󰕾"],
+	    "interval": 50
         },
         "scroll-step": 10,
         "on-click": "pavucontrol"
