@@ -37,10 +37,11 @@ configuration {
     display-drun: " Launch ⏩";
     display-run: " Cmd: ";
     display-window: " Win : ";
+    display-dmenu: " Clipboard ⏩ ";
 }
 
 window {
-    width: 25%;
+    width: 22%;
     location: center;
     background-color: #252423;
     orientaion: horizontal;
@@ -74,7 +75,7 @@ entry {
     border-color:@cream;
     background-color:@dark-grey;
     text-color:@yellow;
-    font:"Roboto Condensed bold 12";
+    font:"Roboto Condensed Bold 13";
 }
 
 listview {
