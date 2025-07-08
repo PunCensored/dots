@@ -75,8 +75,8 @@ tooltip {
 
 #tray {
     color: #a9b665;
-    background-color: #46413e;
-    border: 2px solid #c7ab7a;
+    background-color: @bglight;
+    border-right: 2px solid @txt;
 }
 
 
