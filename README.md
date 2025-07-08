@@ -10,6 +10,7 @@ My minimal lightweight antibloat telemetry-less FOSS Arch Linux (actually Gnu + 
 ## Links
 
 SDDM: https://github.com/he1senbrg/sddm-gruvbox
+XCUSOR Theme: https://github.com/sainnhe/capitaine-cursors
 
 
 ## Notes
