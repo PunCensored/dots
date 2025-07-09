@@ -9,9 +9,6 @@ My minimal lightweight antibloat telemetry-less FOSS Arch Linux (actually Gnu + 
 
 ## Links
 
-SDDM: https://github.com/he1senbrg/sddm-gruvbox
-
-
-## Notes
-
-For Cursor: Follow Instructions on hyprland page, I took the only gruvbox cursor there is on the discord.
+- SDDM: https://github.com/he1senbrg/sddm-gruvbox
+- XCUSOR Theme: https://github.com/sainnhe/capitaine-cursors
+  - NOTE: hyprcursor instructions are on https://wiki.hypr.land/Hypr-Ecosystem/hyprcursor/ // I used the only gruvbox theme on discord
