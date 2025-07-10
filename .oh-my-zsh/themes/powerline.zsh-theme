@@ -51,11 +51,11 @@ if [ "$POWERLINE_CUSTOM_CURRENT_PATH" != "" ]; then
 fi
 
 if [ "$POWERLINE_GIT_CLEAN" = "" ]; then
-  POWERLINE_GIT_CLEAN="✔"
+  POWERLINE_GIT_CLEAN="%F{10}✔"
 fi
 
 if [ "$POWERLINE_GIT_DIRTY" = "" ]; then
-  POWERLINE_GIT_DIRTY="✘"
+  POWERLINE_GIT_DIRTY="%F{9}✘"
 fi
 
 if [ "$POWERLINE_GIT_ADDED" = "" ]; then
@@ -63,7 +63,7 @@ if [ "$POWERLINE_GIT_ADDED" = "" ]; then
 fi
 
 if [ "$POWERLINE_GIT_MODIFIED" = "" ]; then
-  POWERLINE_GIT_MODIFIED="%F{15}✹%F{black}"
+  POWERLINE_GIT_MODIFIED="%F{13}✹%F{black}"
 fi
 
 if [ "$POWERLINE_GIT_DELETED" = "" ]; then
@@ -71,7 +71,7 @@ if [ "$POWERLINE_GIT_DELETED" = "" ]; then
 fi
 
 if [ "$POWERLINE_GIT_UNTRACKED" = "" ]; then
-  POWERLINE_GIT_UNTRACKED="%F{yellow}✭%F{black}"
+  POWERLINE_GIT_UNTRACKED="%F{11}✭%F{black}"
 fi
 
 if [ "$POWERLINE_GIT_RENAMED" = "" ]; then
