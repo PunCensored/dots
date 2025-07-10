@@ -8,9 +8,13 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-POWERLINE_DISABLE_RPROMPT="true"
+POWERLINE_SHOW_GIT_ON_RIGHT="true"
 POWERLINE_SHORT_HOST_NAME="true"
+POWERLINE_RIGHT_A="none"
+POWERLINE_RIGHT_B="none"
 POWERLINE_PATH="short"
+POWERLINE_HIDE_USER_NAME="true"
+POWERLINE_HIDE_HOST_NAME="true"
 ZSH_THEME="powerline"
 
 # Set list of themes to pick from when loading at random
