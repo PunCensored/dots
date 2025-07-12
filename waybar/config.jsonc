@@ -31,7 +31,7 @@
         "tooltip": false,	
 	"format": "{name}┃ {icon}",
 	"format-icons": {
-		"active": " ",
+		"active": " ",
 		"default": "󱓻 "
        }
     },
@@ -42,11 +42,11 @@
 
     "tray": {
         "spacing": 10,
-        "tooltip": false
+        "tooltip": true
     },
 
     "clock": {
-        "format": "{:%H:%M | %a, %d %b %Y}",
+        "format": "{:%H:%M | %a, %d. %B %Y}",
         "tooltip": false
     },
 
@@ -68,7 +68,7 @@
     },
 
     "network": {
-        "format-wifi" : " Wifi {bandwidthDownBits}",
+        "format-wifi" : "  / Wifi {bandwidthDownBits}",
         "format-ethernet": "󱘖  / Eth {bandwidthDownBits}",
         "format-disconnected" : "  / No Network",
         "interval": 5,
@@ -80,15 +80,13 @@
         "max-volume": 150,
         "format": "{icon} / Vol {volume}%",
         "nospacing": 1,
-        "on-click": "pavucontrol",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "tooltip": false,
-	"format-muted": "󰖁",
+	"format-muted": " / Vol: MUTE",
 	"format-icons": {
-            "default": ["󰕿", "󰖀", "󰕾"],
+            "default": ["", "", ""],
 	    "interval": 50
-        },
-        "scroll-step": 10,
-        "on-click": "pavucontrol"
+        }
     }
 }
 
