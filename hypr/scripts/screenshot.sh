@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 now="$(date +'%d.%m.%Y-%H:%M')"
-
-grimblast copysave area ~/Pictures/Screenshot_$now.png
+kitty
+grimblast --cursor --freeze copysave area ~/Pictures/Screenshot_$now.png
