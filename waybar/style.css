@@ -42,6 +42,11 @@ tooltip {
     padding: 2px 8px;
 }
 
+#custom-pacman {
+    padding: 0px 2px
+}
+
+
 #workspaces {
     background-color: @bglight;
     margin: 6px 6px 6px 6px;
@@ -89,6 +94,15 @@ tooltip {
     border: 2px solid @txt-dark;
     color: @bgdark;
 }
+
+#custom-pacman {
+    color: @red
+}
+#custom-pacman.updated {
+    color: @green;
+    background-color: @bglight;
+}
+
 
 #cpu.critical,
 #memory.critical {

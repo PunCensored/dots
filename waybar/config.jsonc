@@ -22,7 +22,8 @@
         "cpu",
         "memory",
         "network",
-        "pulseaudio"
+        "pulseaudio",
+	"custom/pacman"
     ],
     
     "hyprland/workspaces": {
@@ -87,6 +88,17 @@
             "default": ["", "", ""],
 	    "interval": 50
         }
+    },
+    "custom/pacman": {
+	"format": "{icon}{0}",
+	"return-type": "json",
+	"format-icons": {
+	    "pending-updates": " ",
+	    "updated": ""
+        },
+	"exec-if": "which waybar-updates",
+	"exec": "waybar-updates",
+	"on-click": "kitty sudo pacman -Syu && yay -Syu"
     }
 }
 
