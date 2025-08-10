@@ -4,8 +4,13 @@ My minimal lightweight antibloat telemetry-less FOSS Arch Linux (actually Gnu + 
 
 
 ## Gallery
+### Desktop
 ![desktop1](https://github.com/PunCensored/dots/blob/master/gallery/desktop1.png)
 
+
+### Keyboard Layout
+(its Colemak DH)
+![sweep](https://github.com/PunCensored/dots/blob/master/gallery/sweep-base0.png)
 
 ## Links
 
