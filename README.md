@@ -11,6 +11,7 @@ My minimal lightweight antibloat telemetry-less FOSS Arch Linux (actually Gnu + 
 ### Keyboard Layout
 (its Colemak DH)
 ![sweep](https://github.com/PunCensored/dots/blob/master/gallery/sweep-base0.png)
+test.
 
 ## Links
 
