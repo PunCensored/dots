@@ -85,18 +85,24 @@ tooltip {
 }
 
 
+#pulseaudio:hover {
+    background-color: @yellow;
+    border: 2px solid @yellow;
+    border-radius: 2px;
+}
 
 #cpu,
 #memory,
 #network,
 #pulseaudio {
     background-color: @txt;
-    border: 2px solid @txt-dark;
+    border: 2px solid @txt;
+    border-radius: 2px;
     color: @bgdark;
 }
 
 #custom-pacman {
-    color: @red
+    color: @orange
 }
 #custom-pacman.updated {
     color: @green;
