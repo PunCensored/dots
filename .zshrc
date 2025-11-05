@@ -77,7 +77,7 @@ ZSH_THEME="powerline"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zoxide)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,5 +107,8 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias up="sudo pacman -Syu && yay -Syu"
+alias vim="nvim"
+alias lg="lazygit"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
