@@ -1,5 +1,5 @@
 > **!**
-> This repo exists so I can learn the basics of git, for anyone actually interested: you may continue, but viewer aggression is advised. 
+> This repo exists so I can learn the basics of git, for anyone actually interested: you may continue, but viewer discretion is advised. 
 
 
 
