@@ -1,17 +1,12 @@
-# My Workstation Config
+> **!**
+> This repo exists so I can learn the basics of git, for anyone actually interested: you may continue, but viewer discretion is advised. 
 
-My minimal lightweight antibloat telemetry-less FOSS Arch Linux (actually Gnu + Linux) setup utilizing turbo boosted hyperefficient workflows and zen-mode, optimized for watching YouTube for hours and hours upon end.
 
 
 ## Gallery
 ### Desktop
 ![desktop1](https://github.com/PunCensored/dots/blob/master/gallery/desktop1.png)
 
-
-### Keyboard Layout
-(its Colemak DH)
-![sweep](https://github.com/PunCensored/dots/blob/master/gallery/sweep-base0.png)
-.
 
 ## Links
 
