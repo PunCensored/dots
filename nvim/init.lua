@@ -32,6 +32,6 @@ vim.keymap.set('n', '<leader>p',':TypstPreview<CR>')
 require("config.lazy")
 require('lualine').setup()
 
-vim.lsp.enable({'luals', 'pyright', 'tinymist'})
+vim.lsp.enable({'luals', 'pyright', 'tinymist', 'js'})
 vim.lsp.config("luals",
 { settings = {Lua = {workspace = { library = vim.api.nvim_get_runtime_file("", true)}}}})
