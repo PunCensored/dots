@@ -10,7 +10,7 @@ vim.o.wildoptions = "pum"
 -- Vanilla Keymaps
 vim.g.mapleader = " "
 vim.keymap.set('n', '<leader>a',':quit<CR>')
-vim.keymap.set('n', '<leader>w',':write<CR>')
+vim.keymap.set('n', '<leader><leader>',':write<CR>')
 vim.keymap.set({'n', 'v', 'x'}, '<leader>y','"+y<CR>')
 vim.keymap.set({'n', 'v', 'x'}, '<leader>d','"+d<CR>')
 
@@ -19,15 +19,19 @@ vim.keymap.set('n', '<leader>hs',':split<CR>')
 
 vim.keymap.set('n', '<leader>b',':bprevious<CR>')
 
-vim.keymap.set('n', '<leader>rn',':wincmd h')
-vim.keymap.set('n', '<leader>re',':wincmd j')
-vim.keymap.set('n', '<leader>ri',':wincmd k')
-vim.keymap.set('n', '<leader>ro',':wincmd l')
-vim.keymap.set('n', '<leader>rp',':wincmd p')
--- Plugin Keymaps
-vim.keymap.set('n', '<leader>nn',':Neotree<CR>')
-vim.keymap.set('n', '<leader>nd',':Neotree close<CR>')
-vim.keymap.set('n', '<leader>p',':TypstPreview<CR>')
+vim.keymap.set('n', '<leader>rn',':wincmd h<CR>')
+vim.keymap.set('n', '<leader>re',':wincmd j<CR>')
+vim.keymap.set('n', '<leader>ri',':wincmd k<CR>')
+vim.keymap.set('n', '<leader>ro',':wincmd l<CR>')
+vim.keymap.set('n', '<leader>rp',':wincmd p<CR>')
+vim.keymap.set('n', '<leader>wn', '<cmd>resize +2<CR>')
+vim.keymap.set('n', '<leader>wo', '<cmd>resize -2<CR>')
+vim.keymap.set('n', '<leader>we', '<cmd>vertical resize +5<CR>')
+vim.keymap.set('n', '<leader>wi', '<cmd>vertical resize -5<CR>')
+-- plugin keymaps
+vim.keymap.set('n', '<leader>nn',':Neotree<cr>')
+vim.keymap.set('n', '<leader>nd',':Neotree close<cr>')
+vim.keymap.set('n', '<leader>p',':Typstpreview<cr>')
 
 require("config.lazy")
 require('lualine').setup()
