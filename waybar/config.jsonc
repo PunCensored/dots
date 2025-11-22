@@ -69,9 +69,9 @@
     },
 
     "network": {
-        "format-wifi" : "  / Wifi {bandwidthDownBits}",
-        "format-ethernet": "󱘖  / Eth {bandwidthDownBits}",
-        "format-disconnected" : "  / No Network",
+        "format-wifi" : "  / Wifi: {bandwidthDownBits}",
+        "format-ethernet": "󱘖  / Eth: {bandwidthDownBits}",
+        "format-disconnected" : "  / No Network",
         "interval": 5,
         "tooltip": false
     },
@@ -79,7 +79,7 @@
     "pulseaudio": {
         "scroll-step": 5,
         "max-volume": 150,
-        "format": "{icon} / Vol {volume}%",
+        "format": "{icon} / Vol: {volume}%",
         "nospacing": 1,
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "tooltip": false,
@@ -98,7 +98,7 @@
         },
 	"exec-if": "which waybar-updates",
 	"exec": "waybar-updates",
-	"on-click": "kitty sudo pacman -Syu && yay -Syu"
+	"on-click": "kitty sudo pacman -Syu && yay -Syu && exit"
     }
 }
 
