@@ -19,6 +19,7 @@
 
     "modules-right": [
         "tray",
+	"battery",
         "cpu",
         "memory",
         "network",
@@ -40,6 +41,24 @@
 	"format": " {}",
 	"icon": true
     },
+    "battery": {
+	"spacing": 10,
+	"format": "{icon} : {capacity}%",
+	"format-icons": {
+	"default": ["󰂎", "󰁻","󰁽","󰁿","󰂁","󰁹"],
+            "charging": ["󰂄"],
+	    "interval": 18
+        },"states": {
+		"warning": 30,
+		"critical": 15
+	},
+	"events": {
+	    "on-discharging-warning": "notify-send -u normal 'Low Battery'",
+	    "on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
+	    "on-charging-100": "notify-send -u normal 'Battery Full!'"
+	},
+  "tooltip": true
+    },
 
     "tray": {
         "spacing": 10,
@@ -52,7 +71,7 @@
     },
 
     "cpu": {
-        "format": "  / CPU: {usage}%",
+        "format": "   : {usage}%",
         "interval": 2,
         "states": {
             "critical": 90
@@ -60,7 +79,7 @@
     },
 
     "memory": {
-        "format": "  / RAM: {percentage}%",
+        "format": "   : {percentage}%",
         "interval": 2,
 
         "states": {
@@ -69,7 +88,7 @@
     },
 
     "network": {
-        "format-wifi" : "  / Wifi: {bandwidthDownBits}",
+        "format-wifi" : "   : {bandwidthDownBits}",
         "format-ethernet": "󱘖  / Eth: {bandwidthDownBits}",
         "format-disconnected" : "  / No Network",
         "interval": 5,
@@ -79,7 +98,7 @@
     "pulseaudio": {
         "scroll-step": 5,
         "max-volume": 150,
-        "format": "{icon} / Vol: {volume}%",
+        "format": "{icon}  : {volume}%",
         "nospacing": 1,
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "tooltip": false,

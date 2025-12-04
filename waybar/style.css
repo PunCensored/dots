@@ -26,6 +26,9 @@
 window#waybar {
     background: @bglight;
 }
+window#waybar.empty #window{
+    color: @bglight;
+}
 
 tooltip {
     background-color: #1d2021;
@@ -37,6 +40,7 @@ tooltip {
 #cpu,
 #memory,
 #network,
+#battery,
 #pulseaudio {
     margin: 6px 6px 6px 0px;
     padding: 2px 8px;
@@ -93,6 +97,7 @@ tooltip {
 
 #cpu,
 #memory,
+#battery,
 #network,
 #pulseaudio {
     background-color: @txt;
