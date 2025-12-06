@@ -10,6 +10,5 @@
 
 ## Links
 
-- SDDM: https://github.com/he1senbrg/sddm-gruvbox
+- SDDM: https://github.com/he1senbrg/sddm-gruvbox (literally just changed colors)
 - XCUSOR Theme: https://github.com/sainnhe/capitaine-cursors
-  - NOTE: hyprcursor instructions are on https://wiki.hypr.land/Hypr-Ecosystem/hyprcursor/ // I used the only gruvbox theme on discord
