@@ -5,10 +5,8 @@
 
 ## Gallery
 ![desktop1](https://github.com/PunCensored/dots/blob/master/gallery/desktop1.png)
-<details>
-  <summary><code>Other</code> Currently just Browser </summary>
-
-![broxy](https://github.com/PunCensored/dots/blob/master/gallery/browser.png)
+![desktop1](https://github.com/PunCensored/dots/blob/master/gallery/browser.png)
+yesiknowimessedthatscreenshotup
 
 ## Links
 
