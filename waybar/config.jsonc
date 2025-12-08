@@ -43,7 +43,7 @@
     },
     "battery": {
 	"spacing": 10,
-	"format": "{icon} : {capacity}%",
+	"format": "{icon} | {capacity}%",
 	"format-icons": {
 	"default": ["󰂎", "󰁻","󰁽","󰁿","󰂁","󰁹"],
             "charging": ["󰂄"],
@@ -71,7 +71,7 @@
     },
 
     "cpu": {
-        "format": "   : {usage}%",
+        "format": " | {usage}%",
         "interval": 2,
         "states": {
             "critical": 90
@@ -79,7 +79,7 @@
     },
 
     "memory": {
-        "format": "   : {percentage}%",
+        "format": " | {percentage}%",
         "interval": 2,
 
         "states": {
@@ -88,9 +88,9 @@
     },
 
     "network": {
-        "format-wifi" : "   : {bandwidthDownBits}",
-        "format-ethernet": "󱘖  / Eth: {bandwidthDownBits}",
-        "format-disconnected" : "  / No Network",
+        "format-wifi" : " | {bandwidthDownBits}",
+        "format-ethernet": "󱘖 | {bandwidthDownBits}",
+        "format-disconnected" : " | No Network",
         "interval": 5,
         "tooltip": false
     },
@@ -98,7 +98,7 @@
     "pulseaudio": {
         "scroll-step": 5,
         "max-volume": 150,
-        "format": "{icon}  : {volume}%",
+        "format": "{icon} | {volume}%",
         "nospacing": 1,
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "tooltip": false,
