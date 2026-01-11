@@ -107,7 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias up="sudo pacman -Syu && yay -Syu"
+alias up= "yay -Syu && sudo pacman -Syu "
 alias vim="nvim"
 alias lg="lazygit"
 # alias zshconfig="mate ~/.zshrc"
