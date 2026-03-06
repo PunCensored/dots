@@ -41,6 +41,7 @@ tooltip {
 #memory,
 #network,
 #battery,
+#backlight-slider,
 #pulseaudio {
     margin: 6px 6px 6px 0px;
     padding: 2px 8px;
@@ -66,6 +67,7 @@ tooltip {
     box-shadow: inset 0 -3px transparent;
     padding: 2px 4px;
     color: #c7ab7a;
+    font-weight: 900;
 }
 
 #workspaces button.active {
@@ -74,12 +76,13 @@ tooltip {
 }
 
 #workspaces button.urgent {
-    background-color: @red;
+    color: @red;
 }
 
 #clock {
     background-color: #3c3836;
     color: #d4be98;
+    font-weight: 900;
 }
 
 #tray {
@@ -89,7 +92,9 @@ tooltip {
 }
 
 
-#pulseaudio:hover {
+#pulseaudio:hover,
+#network:hover
+{
     background-color: @yellow;
     border: 2px solid @yellow;
     border-radius: 2px;
@@ -99,6 +104,7 @@ tooltip {
 #memory,
 #battery,
 #network,
+#backlight-slider,
 #pulseaudio {
     background-color: @txt;
     border: 2px solid @txt;
@@ -121,4 +127,3 @@ tooltip {
     border: 2px solid #c7ab7a;
     color: #c14a4a;
 }
-
