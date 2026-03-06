@@ -1,11 +1,12 @@
 {
+ //   "position": "bottom",
     "layer": "top",
     "spacing": 0,
     "height": 0,
 
-    "margin-top": 8,
+    "margin-top": 0,
     "margin-right": 8,
-    "margin-bottom": 0,
+    "margin-bottom": 4,
     "margin-left": 8,
 
     "modules-left": [
@@ -26,27 +27,26 @@
         "pulseaudio",
 	"custom/pacman"
     ],
-    
-    "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "tooltip": false,	
-	"format": "{name}┃ {icon}",
-	"format-icons": {
-		"active": " ",
-		"default": "󱓻 "
-       }
-    },
+   "hyprland/workspaces": {
+        "format": "{name} {windows} ",
+	"format-active": "{name}",
+    "workspace-taskbar": {
+        "enable": true,
+        "update-active-window": true,
+        "icon-size": 18,
+    }
+}, 
     "hyprland/window": {
 	"format": " {}",
 	"icon": true
     },
     "battery": {
 	"spacing": 10,
-	"format": "{icon} | {capacity}%",
+	"format": "{icon} {capacity}%",
 	"format-icons": {
 	"default": ["󰂎", "󰁻","󰁽","󰁿","󰂁","󰁹"],
-            "charging": ["󰂄"],
+            "charging": ["󱐋"],
+            "plugged": ["󰚥"],
 	    "interval": 18
         },"states": {
 		"warning": 30,
@@ -71,7 +71,7 @@
     },
 
     "cpu": {
-        "format": " | {usage}%",
+        "format": "  {usage}%",
         "interval": 2,
         "states": {
             "critical": 90
@@ -79,7 +79,7 @@
     },
 
     "memory": {
-        "format": " | {percentage}%",
+        "format": "  {percentage}%",
         "interval": 2,
 
         "states": {
@@ -88,28 +88,30 @@
     },
 
     "network": {
-        "format-wifi" : " | {bandwidthDownBits}",
-        "format-ethernet": "󱘖 | {bandwidthDownBits}",
-        "format-disconnected" : " | No Network",
+        "format-wifi" : "   {bandwidthDownBits}",
+        "format-ethernet": "󰐧  {bandwidthDownBits}",
+        "format-disconnected" : "  Disconnected",
         "interval": 5,
-        "tooltip": false
+        "tooltip": false,
+	"on-click": "kitty -e nmtui",
+	"on-click-right": "kitty -e bluetui"
     },
 
     "pulseaudio": {
-        "scroll-step": 5,
+        "scroll-step": 1,
         "max-volume": 150,
-        "format": "{icon} | {volume}%",
+        "format": "{icon}  {volume}%",
         "nospacing": 1,
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "tooltip": false,
-	"format-muted": " / Vol: MUTE",
+	"format-muted": "   Off",
 	"format-icons": {
             "default": ["", "", ""],
 	    "interval": 50
         }
     },
     "custom/pacman": {
-	"format": "{icon}{0}",
+	"format": "{icon} {0}",
 	"return-type": "json",
 	"format-icons": {
 	    "pending-updates": " ",
@@ -117,7 +119,7 @@
         },
 	"exec-if": "which waybar-updates",
 	"exec": "waybar-updates",
-	"on-click": "kitty sudo pacman -Syu && yay -Syu && exit"
+	"on-click": "kitty yay -Syu && sudo pacman -Syu && exit"
     }
 }
 
