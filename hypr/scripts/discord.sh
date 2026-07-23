@@ -5,5 +5,5 @@ echo $minute
 if [[ $minute -ge 54 ]] || [[ $minute -le 6 ]]; then
 	vesktop &
 else
-	echo "NOT within 5 Minutes of a full hour"
+	kitty -e bash -c 'echo "Not within 5 Minutes of a full hour";  sleep 1'
 fi
