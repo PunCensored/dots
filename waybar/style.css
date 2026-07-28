@@ -21,17 +21,19 @@
     font-weight: 900;
     font-size: 14px;
     padding: 0;
+    margin: 0;
 }
 
 window#waybar {
     background: @bglight;
+    border-bottom: 2px solid @txt;
 }
 window#waybar.empty #window{
     color: @bglight;
 }
 
 tooltip {
-    background-color: #1d2021;
+    background-color: #252423;
     border: 2px solid #7c6f64;
 }
 
@@ -73,6 +75,9 @@ tooltip {
 #workspaces button.active {
     color: @green; 
     border-bottom: 2px solid @green;
+    background-color: #424a3e;
+    border-radius: 2px;
+    border-top: 2px solid #424a3e;
 }
 
 #workspaces button.urgent {
