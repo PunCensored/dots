@@ -270,7 +270,7 @@ hl.config({
         kb_layout = "us",
         kb_variant = "colemak_dh_ortho",
         kb_model = "",
-        kb_options = "",
+        kb_options = "caps:swapescape",
         kb_rules = "",
         follow_mouse = 1,
         sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
@@ -278,6 +278,9 @@ hl.config({
             natural_scroll = true,
         },
     },
+      xwayland = {
+    force_zero_scaling = true
+  }
     -- https://wiki.hyprland.org/Configuring/Variables/#gestures
     -- Move/resize windows with mainMod + LMB/RMB and dragging
     -- Laptop multimedia keys for volume and LCD brightness
