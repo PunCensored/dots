@@ -12,5 +12,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("wl-paste --type image --watch cliphist store")
     hl.exec_cmd("hyprctl setcursor gruvcursor 26 &")
     hl.exec_cmd("kitty")
+    hl.exec_cmd("dbus-update-activation-environment --systemd HYPRLAND_INSTANCE_SIGNATURE")
+    hl.exec_cmd("hyprshade auto")
 end)
 
