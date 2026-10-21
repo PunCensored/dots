@@ -9,6 +9,8 @@ vim.o.wildoptions = "pum"
 vim.opt.wrap = true
 vim.opt.linebreak = true
 vim.opt.breakindent = true
+vim.opt.background = "light"
+vim.o.termguicolors = true
 
 -- Vanilla Keymaps
 vim.g.mapleader = " "
@@ -41,9 +43,16 @@ vim.keymap.set('n', '<leader>nd',':Neotree close<cr>')
 vim.keymap.set('n', '<leader>p',':TypstPreview<cr>')
 vim.keymap.set('n', '<leader>o',':Oil<CR>')
 
+-- Rust
+vim.keymap.set('n', '<leader>pr', ':RustRun<cr>')
+
 require("config.lazy")
+require("config.kitty-padding")
 require('lualine').setup()
+
+vim.cmd('colorscheme flexoki-light')
 
 vim.lsp.enable({'luals', 'pyright', 'tinymist', 'js'})
 vim.lsp.config("luals",
 { settings = {Lua = {workspace = { library = vim.api.nvim_get_runtime_file("", true)}}}})
+

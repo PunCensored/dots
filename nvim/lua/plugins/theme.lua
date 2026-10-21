@@ -1,0 +1,33 @@
+return
+  { 'kepano/flexoki-neovim', name = 'flexoki' }
+--   "savq/melange-nvim",
+--   lazy = false,    -- load at startup, since it's your main colorscheme
+--   priority = 1000, -- load before other plugins
+--   config = function()
+--
+--     local custom_bg = "#f0e6db"
+--
+--     -- Runs every time the colorscheme is applied, so the override survives
+--     -- background toggles and `:colorscheme melange` reloads
+--     vim.api.nvim_create_autocmd("ColorScheme", {
+--       pattern = "melange",
+--       callback = function()
+--         local groups = {
+--           "Normal",
+--           "NormalNC",
+--           "NormalFloat",
+--           "SignColumn",
+--           "EndOfBuffer",
+--           "LineNr",
+--           "FoldColumn",
+--         }
+--         for _, group in ipairs(groups) do
+--           local hl = vim.api.nvim_get_hl(0, { name = group, link = false })
+--           hl.bg = custom_bg
+--           vim.api.nvim_set_hl(0, group, hl)
+--         end
+--       end,
+--     })
+--
+--     vim.cmd.colorscheme("melange")
+--   end,
