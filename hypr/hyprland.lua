@@ -79,7 +79,7 @@ hl.animation({
 })
 hl.animation({
     leaf = "windowsIn",
-    enabled = true,
+    enabled = false,
     speed = 4,
     bezier = "easeOutQuint",
     style = "popin 88%",
@@ -180,7 +180,7 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true 
 
 hl.window_rule({
     match = {
-        class = "*",
+        class = ".*",
     },
     suppress_event = "maximize",
 })
@@ -221,7 +221,7 @@ hl.config({
         rounding_power = 0,
         -- Change transparency of focused and unfocused windows
         active_opacity = 1.0,
-        inactive_opacity = 0.85,
+        inactive_opacity = 0.70,
         shadow = {
             enabled = false,
             range = 4,
