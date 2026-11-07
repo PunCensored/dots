@@ -1,0 +1,23 @@
+   /**
+    * @name Hide Channel List
+    * @description Hides the channel list inside servers
+    */
+   
+   [class^="sidebar_"]:not(:has([class*="privateChannels"])) {
+       width: 6px !important;
+       min-width: 6px !important;
+       overflow: hidden;
+       opacity: 0;
+       transition: width 0.2s ease, min-width 0.2s ease, opacity 0.2s ease;
+   }
+   [class^="sidebar_"]:not(:has([class*="privateChannels"])):hover {
+       width: 240px !important;
+       min-width: 240px !important;
+       opacity: 1;
+   }
+
+[aria-label*="Server Tag"],
+[class*="clanTag"],
+[class*="guildTag"] {
+    display: none !important;
+}
