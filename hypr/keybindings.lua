@@ -30,7 +30,7 @@ hl.bind(mainMod .. " + code:59", hl.dsp.exec_cmd("waybar"))
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("$HOME/.config/hypr/scripts/screenshot.sh"))
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("hyprpicker -al"))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("cliphist list | rofi -dmenu | cliphist decode | wl-copy"))
-hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd("cliphist wipe"))
+hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd("cliphist wipe && rm -f ${XDG_CACHE_HOME:-$HOME/.cache}/cliphist/db"))
 
 -- Kill 
 hl.bind(mainMod .. " + A", hl.dsp.window.close())
